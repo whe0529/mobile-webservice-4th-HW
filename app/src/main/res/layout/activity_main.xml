@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,6 +14,8 @@
         android:id="@+id/btn_load"
         android:text="Load"
         android:onClick="onClickForLoad"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints"
         />
 
     <Button
@@ -21,12 +24,16 @@
         android:id="@+id/btn_save"
         android:text="Save"
         android:onClick="onClickForSave"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints"
         />
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="300dp"
         android:id="@+id/imgView"
+        android:adjustViewBounds="true"
+        tools:ignore="MissingConstraints"
         />
 
 </LinearLayout>
